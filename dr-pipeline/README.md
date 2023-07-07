@@ -26,7 +26,7 @@ This repository contains a set of scripts to automate the failover and failback 
 
 12. Validation: Perform validation activities to ensure the success of the failover process. This may include recovering any lagged data if necessary and checking data integrity.
 
-##Failback Steps
+## Failback Steps
 
 1. Delete topics on the Primary cluster: Use the provided script or API calls to delete topics on the primary cluster.
 

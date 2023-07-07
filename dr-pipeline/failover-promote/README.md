@@ -29,7 +29,7 @@ Replace the values with your actual cluster link name, destination cluster ID, d
 ## Running the Script
 To run the script, follow these steps:
 
-Ensure that the primary-config.json file is properly configured with your cluster details and the desired action type.
+Ensure that the `primary-config.json` file is properly configured with your cluster details and the desired action type.
 
 Open a terminal or command prompt and navigate to the directory containing the script.
 
@@ -41,9 +41,9 @@ The script will perform the specified action (failover or promotion) on the Kafk
 
 Check the dr-failover.log file in the same directory for the execution log and any error messages.
 
-Please exercise caution when using this script, as it can perform critical actions on your Kafka topics. Make sure to review the configuration before running the script.
+> Please exercise caution when using this script, as it can perform critical actions on your Kafka topics. Make sure to review the configuration before running the script.
 
-Note: If you encounter any issues or errors while running the script, please refer to the troubleshooting section in this README file or contact the script's maintainer for assistance.
+> Note: If you encounter any issues or errors while running the script, please refer to the troubleshooting section in this README file or contact the script's maintainer for assistance.
 
 ## Troubleshooting
 If the script fails to connect to the Kafka cluster or encounters authentication errors, ensure that the provided destination cluster ID, cluster REST URL, API key, and API secret in the primary-config.json file are correct.

@@ -49,7 +49,7 @@ python delete_topics.py
 ```
 The script will connect to the Kafka cluster, retrieve the list of topics, and delete the specified topics while logging the process.
 
-Check the delete-topic.log file in the same directory for the execution log and any error messages.
+Check the `delete-topic.log` file in the same directory for the execution log and any error messages.
 
 Please exercise caution when using this script, as it can delete topics from your Kafka cluster. Make sure to double-check your configuration and excluded topics list before running the script.
 

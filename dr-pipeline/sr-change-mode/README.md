@@ -14,10 +14,10 @@ Before running the script, make sure to provide the necessary configuration deta
   "SR_API_SECRET": "yyyyyyyyyyyyyyyy"
 }
 ```
-SR_CLSTR_REST_URL: The URL of the Schema Registry cluster to connect to.
-SR_API_KEY: The API key for authentication.
-SR_API_SECRET: The API secret for authentication.
-Usage
+- SR_CLSTR_REST_URL: The URL of the Schema Registry cluster to connect to.
+- SR_API_KEY: The API key for authentication.
+- SR_API_SECRET: The API secret for authentication.
+## Usage
 Ensure that you have the necessary prerequisites and the configuration file is correctly populated.
 
 Save the Python script to a file, e.g., schema_registry_mode_change.py.
