@@ -7,11 +7,11 @@ metadata:
 type: Opaque
 stringData:
   kafka.properties: |
-    bootstrap.servers=pkc-ymrq7.us-east-2.aws.confluent.cloud:9092
+    bootstrap.servers=pkc-xxxxx.us-east-2.aws.confluent.cloud:9092
     ssl.endpoint.identification.algorithm=https
     security.protocol=SASL_SSL
     sasl.mechanism=PLAIN
-    sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required username='I5VFDOMRWEHC2TBK' password='tp/RbTNFnPz+XX06tqCQPWoxfLrSD4UpHHjv74uPHIBekUNenYWGG26mZxVVdzc3';
+    sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required username='xxxxxxx' password='yyyyyyyyyyyyyyy';
     client.id=http-producer
 ---
 apiVersion: v1
@@ -31,7 +31,7 @@ spec:
     - -c
     - |
       for i in `seq 20000`; do echo '{"f1": "value'$i'"'};done  | kafka-console-producer \
-            --bootstrap-server pkc-ymrq7.us-east-2.aws.confluent.cloud:9092 \
+            --bootstrap-server pkc-xxxxx.us-east-2.aws.confluent.cloud:9092 \
             --producer.config /mnt/kafka.properties \
             --topic http-messages
     volumeMounts:

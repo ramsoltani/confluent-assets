@@ -22,7 +22,7 @@ spec:
             version: 0.5.2
   dependencies:
     kafka:
-      bootstrapEndpoint: pkc-ymrq7.us-east-2.aws.confluent.cloud:9092
+      bootstrapEndpoint: pkc-xxxxx.us-east-2.aws.confluent.cloud:9092
       authentication:
         type: plain
         jaasConfig:
