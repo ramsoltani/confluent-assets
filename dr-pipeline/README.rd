@@ -1,7 +1,7 @@
-Confluent Cloud Failover and Failback Process
+# Confluent Cloud Failover and Failback Process
 This repository contains a set of scripts to automate the failover and failback process in Confluent Cloud. The failover process involves detecting a regional outage, checking the health of the Disaster Recovery (DR) cluster, failing over mirror topics, changing the DR Schema Registry mode, updating applications and connectors, starting clients in the DR region, performing business tests, and validating the failover. The failback process involves deleting topics on the primary cluster, establishing a cluster link in the reverse direction, wiping the original Schema Registry cluster, creating a schema exporter on the DR environment, waiting for synchronization, stopping producers and consumers, promoting mirror topics, switching the original Schema Registry to READWRITE, updating applications and connectors, starting clients in the primary region, and performing validation activities.
 
-Failover Steps
+## Failover Steps
 Detect regional outage via metrics going to zero in the primary region: Monitor metrics related to the primary region and detect any significant decrease or drop to zero, indicating a regional outage.
 
 Check DR cluster health: Verify the health and availability of the DR cluster to ensure it is ready for failover.
@@ -26,7 +26,8 @@ Delete Schema exporter: Utilize the provided script (schema_exporter_deletion.py
 
 Validation: Perform validation activities to ensure the success of the failover process. This may include recovering any lagged data if necessary and checking data integrity.
 
-Failback Steps
+##Failback Steps
+
 Delete topics on the Primary cluster: Use the provided script or API calls to delete topics on the primary cluster.
 
 Establish a cluster link in the reverse direction with consumer offset sync and auto-mirror topic creation: Set up a cluster link between the DR and primary clusters, ensuring consumer offset synchronization and enabling auto-mirror topic creation.
@@ -57,7 +58,7 @@ Validation: Perform validation activities to ensure the success of the failback 
 
 Check data integrity: Verify the integrity and consistency of the data in the primary region to ensure a seamless failback and data replication.
 
-Script References
+## Script References
 schema_exporter_creation.py: Script to create the schema exporter and mirror topics from the primary region to the DR region.
 
 schema_registry_mode_change.py: Script to change the mode of the Schema Registry to READWRITE or IMPORT.
@@ -68,5 +69,5 @@ schema_exporter_deletion.py: Script to delete the schema exporter in the DR clus
 
 Please refer to the specific script documentation and usage instructions for executing the corresponding steps mentioned above.
 
-Disclaimer
+## Disclaimer
 The provided scripts and failover/failback processes are intended as a starting point and should be customized and thoroughly tested based on your specific Confluent Cloud setup and requirements. Always refer to the official Confluent Cloud documentation for best practices and up-to-date instructions.
