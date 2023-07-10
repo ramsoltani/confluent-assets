@@ -1,4 +1,4 @@
-#vConfluent Cloud Automation Repository
+# Confluent Cloud Automation Repository
 This repository consists of two sub-repositories: users-invite and terraform-scripts. These repositories provide automation for managing users and creating Confluent Cloud resources using Terraform.
 
 ## users-invite Repository
