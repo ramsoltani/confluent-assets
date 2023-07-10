@@ -1,0 +1,16 @@
+
+confluent_cloud_api_key=
+confluent_cloud_api_secret=
+
+kafka_source_api_key=
+kafka_source_api_secret=
+
+kafka_destination_api_key=
+kafka_destination_api_secret=
+
+cluster_link_name=
+
+source_kafka_cluster_id=
+source_kafka_cluster_environment_id=
+destination_kafka_cluster_id=
+destination_kafka_cluster_environment_id=
