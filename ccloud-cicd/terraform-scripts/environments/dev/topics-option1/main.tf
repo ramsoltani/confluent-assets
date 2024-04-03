@@ -14,7 +14,7 @@ data "confluent_kafka_cluster" "cluster_confluentPS" {
 // If Terraform is not run from within the private network, this will not work
 
 module "kafka_topics" {
-  source = "../../../modules/kafka-topics"
+  source = "../../../modules/kafka-topics-option1"
 
   env_confluentPS_id         = data.confluent_environment.env_confluentPS.id
   confluent_cloud_api_key    = var.confluent_cloud_api_key
